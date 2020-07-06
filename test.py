@@ -102,6 +102,7 @@ if __name__ == "__main__":
     X_test, y_test = loadTestData(test_dataset_path, test_label_csv)
 
     # loading trained model
+    # NOTE : Use "chart_image_transfer_learning.ipynb" notebook to create trained model before testing  
     trained_model_path = 'VGG_based_model.h5'
     model = tf.keras.models.load_model(trained_model_path)
     
